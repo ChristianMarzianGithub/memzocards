@@ -1,2 +1,3 @@
 # memzocards
-A flashcard app
+memzocards.space
+- A flashcard app -
