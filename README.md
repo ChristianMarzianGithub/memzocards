@@ -19,9 +19,13 @@ memzocards.space
 
 
 Controller → Service → Repository
+
              ↓
+             
             DTO
+            
              ↕
+             
            Entity
 
 🔥 The real flow (what actually happens)
