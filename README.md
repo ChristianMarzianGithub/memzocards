@@ -18,14 +18,13 @@ memzocards.space
 
 
 
-Controller  →  Service  →  Repository
-             
-             
-          Service
-             ↓             
-            DTO            
-             ↕             
-           Entity
+Database → Repository → Service → Controller → Model → View (HTML)
+                 
+                     
+                     ↑
+                  Entity
+                     ↓
+                    DTO
 
 🔥 The real flow (what actually happens)
 
