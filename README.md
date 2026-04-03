@@ -16,7 +16,6 @@ memzocards.space
 
 
 
-RestController → Service → DTO → Entity → Repository
 
 
 Controller → Service → Repository
