@@ -13,3 +13,7 @@ memzocards.space
 - Session-specific beans	session	Rare: mostly for traditional web apps
 - Global caches / metrics	application	Optional: store app-wide metrics
 - WebSocket user session	websocket	Optional: track live user progress
+
+
+
+RestController → Service → DTO → Entity → Repository
