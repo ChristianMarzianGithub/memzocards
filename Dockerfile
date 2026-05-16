@@ -1,5 +1,15 @@
-FROM nginx:alpine
+FROM maven:3.9.8-eclipse-temurin-17 AS build
+WORKDIR /app
 
-COPY index.html /usr/share/nginx/html/index.html
+COPY pom.xml .
+COPY src ./src
 
-EXPOSE 80
+RUN mvn -q -DskipTests package
+
+FROM eclipse-temurin:17-jre
+WORKDIR /app
+
+COPY --from=build /app/target/memzocards-0.0.1-SNAPSHOT.jar app.jar
+
+EXPOSE 8080
+ENTRYPOINT ["java", "-jar", "app.jar"]
